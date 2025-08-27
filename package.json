@@ -1,28 +1,29 @@
 {
   "name": "sharebites",
   "version": "1.0.0",
-<<<<<<< HEAD
-=======
+  "description": "Mini hackathon project for food donation",
+  "main": "src/app.js",
   "type": "module",
-  "description": "A food donation website connecting hostels with NGOs can facilitate the notification of food availability for donation",
->>>>>>> main
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-<<<<<<< HEAD
-  "description": "",
+  "keywords": [
+    "food",
+    "donation",
+    "hackathon",
+    "express",
+    "firebase"
+  ],
+  "author": "Shabaan",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^17.2.1",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "mongoose": "^8.18.0"
-=======
-  "dependencies": {
-    "nodemon": "^3.1.10"
->>>>>>> main
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }

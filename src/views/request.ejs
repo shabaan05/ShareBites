@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Food - ShareBites</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Optional: Google Maps JS for later integration -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+</head>
+<body>
+  <header>
+    <h1>Available Food Donations</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/food/donate">Donate Food</a>
+    </nav>
+  </header>
+
+  <main>
+    <% if (foodList.length === 0) { %>
+      <p>No donations available currently. Check back later!</p>
+    <% } else { %>
+      <ul>
+        <% foodList.forEach(food => { %>
+          <li>
+            <strong><%= food.name %></strong> - <%= food.quantity %> portions <br>
+            Location: <%= food.location %> <br>
+            <% if (food.contact) { %>Contact: <%= food.contact %><br><% } %>
+            <% if (food.description) { %>Description: <%= food.description %><br><% } %>
+            Status: <%= food.isClaimed ? "Claimed" : "Available" %>
+          </li>
+          <hr>
+        <% }) %>
+      </ul>
+    <% } %>
+
+    <!-- Optional: Map placeholder -->
+    <div id="map" style="height: 400px; width: 100%;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShareBites</p>
+  </footer>
+
+  <script>
+    // Google Maps integration will go here later
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 0, lng: 0 }, // default center
+        zoom: 2,
+      });
+
+      // Later: Add markers for each donation
+    }
+  </script>
+</body>
+</html>

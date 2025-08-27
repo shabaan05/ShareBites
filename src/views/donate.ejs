@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Food - ShareBites</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Donate Food</h1>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/food/request">Request Food</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="/food/donate" method="POST">
+      <label for="name">Food Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="contact">Contact (optional):</label>
+      <input type="text" id="contact" name="contact">
+
+      <label for="description">Description (optional):</label>
+      <textarea id="description" name="description"></textarea>
+
+      <button type="submit">Donate</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShareBites</p>
+  </footer>
+</body>
+</html>
