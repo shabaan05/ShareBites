@@ -1,0 +1,16 @@
+{
+  "name": "sharebites",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A food donation website connecting hostels with NGOs can facilitate the notification of food availability for donation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
