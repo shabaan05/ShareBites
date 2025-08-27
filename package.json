@@ -1,6 +1,11 @@
 {
   "name": "sharebites",
   "version": "1.0.0",
+<<<<<<< HEAD
+=======
+  "type": "module",
+  "description": "A food donation website connecting hostels with NGOs can facilitate the notification of food availability for donation",
+>>>>>>> main
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,11 +13,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "description": "",
   "dependencies": {
     "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mongoose": "^8.18.0"
+=======
+  "dependencies": {
+    "nodemon": "^3.1.10"
+>>>>>>> main
   }
 }
